@@ -5,6 +5,7 @@ cache:
   directories:
     - node_modules
 script:
+  - CI=true npm test
   - npm run build
 deploy:
   provider: pages
